@@ -41,6 +41,9 @@ class Categoria(object):
       attribute_map (dict): The key is attribute name
                             and the value is json key in definition.
     """
+    def __str__(self):
+        return self.name
+        
     swagger_types = {
         'id': 'int',
         'name': 'str'

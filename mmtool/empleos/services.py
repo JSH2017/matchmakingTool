@@ -1,6 +1,7 @@
 from __future__ import print_function
 from empleos.models import Empleo
 from empleos.models import Empresa
+from empleos.models import Categoria
 from empleos.rest import ApiException
 from pprint import pprint
 from empleos.api import empleos_api
@@ -31,3 +32,10 @@ def get_empleos_by_centro_comunitario(centro_comunitario_id):
 	
 	api_instance = empleos_api.EmpleoApi()
 	api_instance.find_jobs_by_centro_comunitario(centro_comunitario_id)
+
+def get_categorias():
+	lista=[]
+	for i in range(10):
+		categoria = Categoria(id=i,name="categoria ")
+		lista.append(categoria)
+	return lista
