@@ -1,0 +1,9 @@
+{% if categorias %}
+    <ul>
+    {% for categoria in categorias %}
+        <li><a href="/polls/{{ categoria.id }}/">{{ categoria.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay categorias disponibles.</p>
+{% endif %}
