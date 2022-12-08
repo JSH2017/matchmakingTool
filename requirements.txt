@@ -1,4 +1,4 @@
-certifi==2018.1.18
+certifi==2022.12.7
 Django==2.0.1
 python-dateutil==2.6.1
 pytz==2017.3
